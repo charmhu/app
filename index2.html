@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	
+		
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/control_but.css" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/zzsc-demo.css">
+		<script src="./js/authority/lib3rd-jquery-1.9.1.js"></script>
+	</head>
+	<style>
+		  .text_style_2{
+			font-size: xxx-large;
+			font-family: fantasy;
+			color: #FFFFFF;
+			  
+		  }
+	</style>
+	<body>
+		<div id="2" class="two" style="z-index:1;">
+			<div style="position:relative;height:100%;width:100%;box-sizing: border-box;padding-top: 4%;padding-left: 3%;padding-right: 3%;">
+			<div style="position: relative;float: left;width: 29%;height: 100%;">
+					
+					<button id="control_mode" class="but_control_02" style="background-color: #fd7b24de;font-family: cursive;" >CONTROLS<br>MODE</button>
+					<button id="full_1" class="but_control_02" >FULL</button>
+					<button id="clutch_in_1" class="but_control_02" style="background-color: #fd7b24de;">CLUTCH<br>IN</button>
+					<button id="half_1" class="but_control_02" >HALF</button>
+					<button id="clutch_out_1" class="but_control_02" style="background-color: #ec0a0ac9;">CLUTCH<br>OUT</button>
+					<button id="slow_1" class="but_control_02" >SLOW</button>
+					<button id="engine_stby_1" class="but_control_02" style="background-color: #fd7b24de;font-family: cursive;">ENGINE<br>STBY/FIN</button>
+					<button id="dead_slow_1" class="but_control_02" >DEAD<br>SLOW</button>
+					<button id="emerg_run_1" class="but_control_02" style="background-color: #fd7b24de;font-family: cursive;">EMERG<br>RUN/STOP</button>
+					<button id="stop_1" class="but_control_02" >STOP</button>
+					<button id="half_low_1" class="but_control_02" >HALF</button>
+					<button id="dead_slow_low_1" class="but_control_02" >DEAD<br>SLOW</button>
+					<button id="full_low_1" class="but_control_02" >FULL</button>
+					<button id="slow_low_1" class="but_control_02" >SLOW</button>
+			
+			</div>
+				<div style="position: relative;float: left;width: 42%;height: 100%;">
+					<table style="width: 100%;">
+						<tr>
+							 <th colspan="3" style="font-size: xx-large;"> ENGINE &nbsp;CONTROL </th>
+						</tr>
+						<tr style="font-family: 'arial black';">
+							<td style="width: 37%;background-color: #002d52;border:solid #FFFFFF; border-width:1px 1px 1px 1px;	">PORT</td>
+							<td style="width: 26%;"></td>
+							<td style="width: 37%;background-color: #002d52;border:solid #FFFFFF; border-width:1px 1px 1px 1px;	">STBD</td>
+						</tr>
+						<tr class="text_style">
+							<td class="border_td show_backgroundcolor text_style_2"><span id="port_ordered">0.00</span></td>
+							<td class="two_middle">ORDERED<br>DIRECTION</td>
+							<td class="border_td show_backgroundcolor text_style_2"><span id="stbd_ordered">0.00</span></td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr class="text_style">
+							<td class="border_td show_backgroundcolor text_style_2"><span id="port_rpm">0.00</span></td>
+							<td class="two_middle">RPM<br>% of MAX</td>
+							<td class="border_td show_backgroundcolor text_style_2"><span id="stbd_rpm">0.00</span></td>
+						</tr>
+						<tr>
+							<td>&nbsp;</td>
+							<td></td>
+							<td></td>
+						</tr>
+							<tr class="text_style">
+							<td class="border_td show_backgroundcolor text_style_2"><span id="port_notch">0.00</span></td>
+							<td class="two_middle">NOTCH<br>% of MAX</td>
+							<td class="border_td show_backgroundcolor text_style_2"><span id="stbd_notch">0.00</span></td>
+						</tr>
+							<tr>
+							<td>&nbsp;</td>
+							<td></td>
+							<td></td>
+						</tr>
+							<tr class="text_style">
+							<td class="border_td show_backgroundcolor text_style_2"><span id="port_pitch">0.00</span></td>
+							<td class="two_middle">PITCH<br>% of MAX</td>
+							<td class="border_td show_backgroundcolor text_style_2"><span id="stbd_pitch">0.00</span></td>
+						</tr>
+					</table>
+					
+					<div style="position: relative;width: 51%; margin:15% 0% 0 24%;background-color:#002d52;border:solid #FFFFFF; border-width:1px;"><span style="text-align: center; font-weight: 600;" >COMBINATOR</span></div>
+						<div style="position: relative; width:90%;height: 20%; margin: 10% 5% 0 5%;">
+								<button id="fixed_pitch" class="but_control_02_02" style="background-color: #ec0a0ac9;">FIXED<br>PITCH</button>
+								<button id="combi" class="but_control_02_02" style="background-color: #fd7b24de;font-family: cursive;">COMBI</button>
+								<button id="var_pitch" class="but_control_02_02" style="background-color: #fd7b24de;">VAR<br>PITCH</button>
+							</div>
+					</div>	
+			
+					<div style="position: relative;float: left;width: 29%;height: 100%;">
+					<button id="full_2" class="but_control_02" >FULL</button>
+					<button id="control_mode_2" class="but_control_02" style="background-color: #fd7b24de;" >ALARM<br>ACK</button>
+					<button id="half_2" class="but_control_02" >HALF</button>
+					<button id="clutch_in_2" class="but_control_02" style="background-color: #fd7b24de;">CLUTCH<br>IN</button>
+					<button id="slow_2" class="but_control_02" >SLOW</button>
+					<button id="clutch_out_2" class="but_control_02" style="background-color: #ec0a0ac9;">CLUTCH<br>OUT</button>
+					<button id="dead_slow_2" class="but_control_02" >DEAD<br>SLOW</button>
+					<button id="engine_stby_2" class="but_control_02" style="background-color: #fd7b24de;font-family: cursive;">ENGINE<br>STBY/FIN</button>
+					<button id="stop_2" class="but_control_02" >STOP</button>
+					<button id="emerg_run_2" class="but_control_02" style="background-color: #fd7b24de;font-family: cursive;">EMERG<br>RUN/STOP</button>
+					<button id="dead_slow_low_2" class="but_control_02" >DEAD<br>SLOW</button>
+					<button id="half_low_2" class="but_control_02" >HALF</button>
+					<button id="slow_low_2" class="but_control_02" >SLOW</button>
+					<button id="full_low_2" class="but_control_02" >FULL</button>
+				
+				</div>	
+		
+			
+			</div>
+		
+		</div>
+		
+				
+				 <script src="./js/overall_constant.js"></script>		
+				<script src="./js/button_option_2.js"></script>
+				
+	</body>
+</html>

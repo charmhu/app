@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  
+   
+   <link rel="stylesheet" type="text/css" href="css/main.css" />
+   <link rel="stylesheet" type="text/css" href="css/control_but.css" />
+   <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+   <link rel="stylesheet" type="text/css" href="css/zzsc-demo.css">
+  </head>
+  
+  <style>
+	  .text_style_1{
+		font-size: xxx-large;
+		font-family: fantasy;
+		color: #FFFFFF;
+		
+	  }
+	  
+	
+  </style>
+  <body>
+   <div id="1" class="one" style="z-index:2;">
+   	<div id="first_div_panel" style="position: absolute; width: 100%;height: 100%;"></div>
+   	
+   	<div id="first_div_1" style="z-index: 2;">
+   		<div style="position: relative;float: left;width: 26%;height: 100%;">
+           <button id="course_control" class="but_control"style="font-family: cursive;">COURSE<br>CONTROL</button>
+   		<button id="track_control" class="but_control" style="font-family: cursive;">TRACK<br>CONTROL</button>
+   		<button id="yawing" class="but_control"style="font-family: cursive;" >YAWING</button>
+           <button id="rudder" class="but_control" style="font-family: cursive;">RUDDER</button>
+           <button id="cdunter_rudder" class="but_control"style="font-family: cursive;">COUNTER<br>RUDDER</button>
+           <button id="rudder_limit" class="but_control"style="font-family: cursive;">RUDDER<br>LIMIT</button>
+           <button id="dimmer_add" class="but_control " style="font-family: cursive; background-color: #fd7b24de;">DIMMER<br>+</button>
+           <button id="dimmer_decrease" class="but_control "style="font-family: cursive; background-color: #fd7b24de;">DIMMER<br>-</button>
+    
+   			
+   			
+   		</div>
+   	
+   		<div style="position:relative;float: left;width: 48%;height: 100%;">
+   			<span  style="position:absolute;margin:-4% 0 0 -75%;text-align: center; font-weight: 600; font-size: xx-large;">STEERING&nbsp;SYSTEM</span>
+   			<div class="middle_style"style="margin:8% 11% 5% 0; width: 26%;	height: 20%;"><div class="one_middle">GYRO</div>
+   				<span id="byro" class="text_style_1" >0.00</span></div>
+   			<div class="middle_style" style="margin:8% 11% 5% 0; width: 26%;height: 20%;"><div class="one_middle">HEADING</div>
+   				<span id="heading" class="text_style_1">0.00</span></div>
+   			<div class="middle_style" style="margin:8% 0 5% 0;width: 26%;height: 20%;"><div class="one_middle">MAGNETIC</div>
+   				<span id="maghtg" class="text_style_1">0.00</span></div>
+   			<button id="off_course" class="middle_btu_one" style="font-family: cursive;">OFF<br>COURSE</button>
+   			<button id="off_track" class="middle_btu_one" style="font-family: cursive;">OFF<br>TRACK</button>
+   			<button id="radius" class="middle_btu_one" style="font-family: cursive;">RADIUS</button>
+   			<div class="middle_style" style="margin:0 0 0 5%;width: 26%;height: 20%;"><div class="one_middle">SETTING</div>
+   				<span id="setting" class="text_style_1"></span>
+   			</div>
+   						<svg width="382" height="80">
+   			
+   			<rect id="rot" height="25" width="382" y="55" x="0" stroke-width="1" stroke="#000" fill="#6280bb" />
+   			<rect height="25" width="4" y="55" x="190" stroke-width="1" fill="#ffffff" />
+   			<rect id="rot_first" height="25" y="55" x="0" stroke-opacity="null" stroke-width="1" stroke="#000" fill="#00bf5f" />
+   		</svg>
+   		</div>
+   		<div style="position: relative;float: right;width: 26%;height: 100%;">
+   			<button id="gyrd_wagin" class="but_control " style="background-color: #fd7b24de;">GYRO<br>MAGN</button>
+   			<button id="alarm_ack" class="but_control "  style="background-color: #fd7b24de;">ALARM<br>ACK</button>
+   			<button id="hangxingadd" class="but_control" style="width: 17.5%;">+</button>
+   			<button id="hangxingdece" class="but_control" style="width: 17.5%;">-</button>
+   			<button id="course_set" class="but_control" style="font-family: cursive;">COURSE<br>SET</button>
+   			<button id="auto_pilot" class="but_control " style="background-color: #fd7b24de;">AUTO<br>PILOT</button>
+   			<button id="papa_set" class="but_control " style="background-color: #fd7b24de;">PARA<br>SET</button>
+   			<button id="follow_up" class="but_control " style="font-family: cursive; background-color: #2dc309;">FOLLOW<br>UP</button>
+   			<button id="nfu" class="but_control " style="background-color: #fd7b24de;">NFU</button>
+   	
+   		</div>
+   	</div>
+   <div id="first_div_2">
+   	<div id="left_control" style="position: relative;float: left;width: 27%;height: 100%;">
+   		<div style="position: relative;width: 100%;height: 20%;margin-bottom: 8%;margin-top: 2.5%;"> 
+   			<button id="port_1" class="small_btu_one" style="float: left;margin-left: 18%;">PORT</button>
+   			<button id="stbd_1" class="small_btu_one" style="float:right; margin-right: 4.5%;">STBD</button>
+   		</div>
+   		
+   		<div class="rotate" style="margin-left: 8%;">
+			<img id="rotate_1" style="float: right;height: 90%;" src="./img/chuanduo/ok.jpg"></img>
+		</div>
+   	</div>
+   	<img style="position: absolute;   height: 16%;  margin: -12% 0 0 -28.7%;" src="./img/chuanduo/ROT.png"></img>
+   	<img style="position: absolute;   height: 16%;   margin: -1.8% 0 0 -28.7%;" src="./img/chuanduo/RUD-ANGLE.png"></img>
+   	<img style="position: absolute;  height: 16%; margin: 8% 0 0 -28.7%;"src="img/chuanduo/HELM.png"></img>
+   	<div style="position: relative;float: left;width: 46%;height: 100%; padding-top:0%;box-sizing: border-box;">
+   			
+   		<svg width="380" height="120">
+   		
+   		<rect id="borderView" height="25" width="382" y="40" x="0" stroke-width="1.5" stroke="#000" fill="#6280bb" />
+   		<rect height="25" width="4" y="40" x="190" stroke-width="1" fill="#ffffff" />
+   		<rect id="rud_first" height="25" y="40" x="0" stroke-opacity="null" stroke-width="1" stroke="#000" fill="#00bf5f" />
+   	</svg>
+   									
+   		<svg width="382" height="80">
+   		
+   			<rect id="helm" height="25" width="382" y="40" x="0" stroke-width="1.5" stroke="#000" fill="#6280bb" />
+   			<rect height="25" width="4" y="40" x="190" stroke-width="1" fill="#ffffff" />
+   			<rect id="helm_first" height="25" y="40" x="0" stroke-opacity="null" stroke-width="1" stroke="#000" fill="#00bf5f" />
+   		</svg>
+   		
+   			
+   			<img id="serialwarning" style="position:absolute;height: 50%;height: 20%; bottom: 0%; left: 45.5%;display: block;" src="./img/chuanduo/warning.png"></img>									
+   	</div>
+   	<div id="right_control" style="position: relative;float:right;width: 27%;height: 100%;">
+   		<div style="position: relative;width: 100%;height: 20%;margin-bottom: 8%;margin-top: 2.5%;"> 
+   			<button id="port_2" class="small_btu_one" style="float: left;    margin-left: 5%;" >PORT</button>
+   			<button id="stbd_2" class="small_btu_one" style="float:right;margin-right: 18%;">STBD</button>
+   		</div>
+   		<div  class="rotate" style="margin-left: 14%;">
+			
+			<img id="rotate_2" style="float: left;height: 90%;" src="./img/chuanduo/ok.jpg"></img>
+		</div>
+   	</div>
+   	<div id="left_conrtol_add" ></div>
+   	<div id="left_conrtol_down" ></div>
+   	<div id="right_conrtol_add" ></div>
+   	<div id="right_conrtol_down" ></div>
+   </div>
+   	
+   </div>
+	<script src="./js/authority/lib3rd-jquery-1.9.1.js"></script>
+			 <script src="./js/overall_constant.js"></script>		
+			<!--变量初始化 -->
+		   
+		<!--  显示-->
+			
+			<!-- 面板切换  按键操作-->
+			<script src="./js/show_option.js"></script>
+			<script src="./js/button_option_1.js"></script>
+		
+  </body>
+</html>

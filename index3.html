@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/control_but.css" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/zzsc-demo.css">
+	</head>
+	<style>
+		  .text_style_2{
+			font-size: xxx-large;
+			font-family: fantasy;
+			color: #FFFFFF;
+			vertical-align:middle;
+			line-height:74px;
+			  
+		  }
+	</style>
+	<body >
+		<div id="3" class="three">
+		<div style="position:relative;height:100%;width:100%;box-sizing: border-box;padding:4% 3% 6% 5%; background-color: transparent;">
+		 <div style="position: relative;float:left;height:100%;width: 50%;">
+		 	<span style="text-align: center; font-weight: 600; font-size: x-large; MARGIN-LEFT: -102%;">ANCHOR CONTROL</span>
+		 	<div style="position:relative;float:left;height: 100%;width:20%;box-sizing: border-box;padding-top: 43%;">
+		 		<button id="left_heave" class="but_control_03 " style="height: 21.5%;width: 100%; background-color: #fd7b24de;">HEAVE</button>
+				<button id="left_hold" class="but_control_03 "  style="height: 21.5%;width: 100%; background-color: #fd7b24de;">HOLD</button>
+				<button id="left_letgo" class="but_control_03 " style="height: 21.5%;width: 100%; background-color: #fd7b24de;">LETGO</button>
+				<button id="left_slack" class="but_control_03 " style="height: 21.5%;width: 100%; background-color: #fd7b24de;" >SLACK</button>
+		 	</div>
+		 	<div style="position:relative;float:left;height: 100%;width:60%;box-sizing: border-box;padding:0% 2% 0% 2%;">
+		 		
+		 		<div style="position: relative;height: 12%;width: 100%; box-sizing: border-box;padding-top:15%;">
+		 		<div class="one_middle border_td" style="float:left;width: 43%;height: 100%;margin-right: 14%;">PORT</div>
+		 		<div class="one_middle  border_td" style="float:left;width: 43%;height: 100%;">STBD</div>
+		 		</div>
+		 		<div class="one_middle  border_td" style="float:left;width: 50%;height: 5%;margin: 21% 28% 0% 25%">SPD(m/min)</div>
+		 				<table class="text_style" style="position: relative;height: 10%;width: 100%;">
+		 			<tr>
+		 				<td class="border_td show_backgroundcolor text_style_2"style="width: 50%;"><span id="pspd">0.00</span></td>
+		 				<td></td>
+		 				<td class="border_td show_backgroundcolor text_style_2"style="width: 50%;"><span id="sspd">0.00</span></td>
+		 				</tr>
+		 		</table>
+		 		<div class="one_middle  border_td" style="float:left;width: 44%;height: 5%;margin: 9% 28% 0% 28%">DIR(deg)</div>
+		 		<table class="text_style" style="position: relative;height: 10%;width: 100%;">
+		 			<tr>
+		 				<td class="border_td show_backgroundcolor text_style_2"style="width: 50%;"><span id="pdir">0.00</span></td>
+		 				<td></td>
+		 				<td class="border_td show_backgroundcolor text_style_2"style="width: 50%;"><span id="sdir">0.00</span></td>
+		 				</tr>
+		 		</table>
+		 		<div class="one_middle  border_td" style="float:left;width: 50%;height: 5%;margin: 9% 28% 0% 28%">TENSION(t)</div>
+		 		<table class="text_style" style="position: relative;height: 10%;width: 100%;">
+		 			<tr>
+		 				<td class="border_td show_backgroundcolor text_style_2"style="width: 50%;"><span id="pten">0.00</span></td>
+		 				<td></td>
+		 				<td class="border_td show_backgroundcolor text_style_2"style="width: 50%;"><span id="sten">0.00</span></td>
+		 				</tr>
+		 		</table>
+		 		<div class="one_middle  border_td" style="float:left;width: 44%;height: 5%;margin: 9% 28% 0% 28%">LENG(ah)</div>
+		 		<table class="text_style" style="position: relative;height: 10%;width: 100%;">
+		 			<tr>
+		 				<td class="border_td show_backgroundcolor text_style_2"style="width: 50%;"><span id="pleng">0.00</span></td>
+		 				<td></td>
+		 				<td class="border_td show_backgroundcolor text_style_2"style="width: 50%;"><span id="sleng">0.00</span></td>
+		 				</tr>
+		 		</table>
+		 	</div>
+		 		<div style="position:relative;float:left;height: 100%;width:20%;box-sizing: border-box;padding-top:22.5%;">
+		 		<button id="alarm_ack_3" class="but_control_03 "style="height: 17.3%;width: 100%;font-family: cursive; background-color: #fd7b24de;">ALARM<br>ACK</button>
+		 		<button id="right_heave" class="but_control_03 " style="height: 17.3%;width: 100%; background-color: #fd7b24de;">HEAVE</button>
+				<button id="right_hold" class="but_control_03 " style="height: 17.3%;width: 100%; background-color: #fd7b24de;">HOLD</button>
+				<button id="right_letgo" class="but_control_03 " style="height: 17.3%;width: 100%; background-color: #fd7b24de;">LETGO</button>
+				<button id="right_slack" class="but_control_03 "style="height: 17.3%;width: 100%; background-color: #fd7b24de;">SLACK</button>
+		 	     </div>
+		 </div>
+		<div style="position: relative;float:left;height:100%;width: 50%;  box-sizing: border-box;padding-left:1%;">
+			<span style="text-align: center; font-weight: 600; font-size: x-large;">SOUND SIGNALS</span>
+			<div style="position: relative;height: 12%;width: 100%; box-sizing: border-box;padding-top:9%;margin-bottom:8%;padding-left: 25%;"> 
+			<div class="one_middle border_td" style="float:left;width: 40%;height: 100%;margin-left: 15%;">HORN</div>
+			</div>
+			<button id="horn_one" class="but_control_03_01 sound"  onclick='whichwu(this)' >——</button>
+			<button id="horn_two" class="but_control_03_01 sound"  onclick='whichwu(this)'>— —</button>
+			<button id="horn_three" class="but_control_03_01 sound" onclick='whichwu(this)'>— ··</button>
+			<button id="start_ling" class="but_control_03_01 sound"style="background-image: url(img/three/icon01.png); background-size: 100%;background-repeat: round;background-color: #fd7b24de;" ></button>
+			<button id="horn_four" class="but_control_03_01 sound"   onclick='whichwu(this)'>— ···</button>
+			<button id="horn_five" class="but_control_03_01 sound"  onclick='whichwu(this)'>· — ·</button>
+			<button id="horn_six" class="but_control_03_01 sound"  onclick='whichwu(this)'>—····</button>
+			<button id="" class="but_control_03_01 sound" style="border-color: transparent;"></button>
+			<button id="horn_seven" class="but_control_03_01 sound"  onclick='whichwu(this)'>· — ·<br>·· —</button>
+			<button id="horn_eight" class="but_control_03_01 sound"  onclick='whichwu(this)' >·····</button>
+			<button id="horn_auto" class="but_control_03_01 sound " style="background-color: #fd7b24de;" >AUTO</button>
+			<button id="start_luo" class="but_control_03_01 sound" style="background-image: url(img/three/icon03.png); background-size: 100%;background-repeat: round;background-color: #fd7b24de;"></button>
+			<div style="position: relative;height: 8%;width: 100%; box-sizing: border-box; padding-left: 23%;padding-top:4%;margin-bottom:6.4%;"> 
+			<div class="one_middle border_td" style="float:left;width: 40%;height: 100%;   margin-left: 15%;">PERIOD</div>
+			</div>
+			<button id="60" class="but_control_03_01 sound" onclick='whichtime(this)'  >60<br>SEC</button>
+			<button id="90" class="but_control_03_01 sound" onclick='whichtime(this)' >90<br>SEC</button>
+			<button id="120" class="but_control_03_01 sound" onclick='whichtime(this)' >120<br>SEC</button>
+			<button id="start_wu" class="but_control_03_01 sound" style="background-image: url(img/three/icon04.png); background-size: 100%;background-repeat: round; background-color: #fd7b24de;"></button>
+			
+			
+		</div>
+		</div>
+		<script src="./js/authority/lib3rd-jquery-1.9.1.js"></script>
+			
+				 <script src="./js/overall_constant.js"></script>		
+					
+				<!-- 面板切换  按键操作-->
+				<script src="./js/button_option_3.js"></script>
+	
+	</body>
+</html>
