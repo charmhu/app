@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/control_but.css" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/zzsc-demo.css">
+	</head>
+	<style>
+		  .text_style_2{
+			font-size: xxx-large;
+			font-family: fantasy;
+			color: #FFFFFF;
+			vertical-align:middle;
+			line-height:74px;
+			  
+		  }
+	</style>
+<body>
+		<div id="7" class="seven">
+		<div class="seven_one">
+			<span  style="text-align: center; font-weight: 600; font-size: x-large;">TUG&nbsp;CONTROL</span>
+			<div class="one_middle border_td" style="position: absolute; width:35%;height: 4.5%; margin: 10.5% 0 0 25%;">&nbsp;FORCE(T)&nbsp;</div>
+			<div class="force border_td"><span id="tug_force" class="text_style_2">0.00</span></div>
+			<div id="tug_dir" style="position: absolute;width: 80%; height: 30%;  margin: 45% 0 0 3% ;background-image: url(img/seven/duo.png);     background-size: contain;background-repeat: round;"></div>
+			
+			<div class="one_middle border_td" style="position: absolute; width:35%;height: 4.5%; margin: 134% 0 0 25%;">&nbsp;DIR&nbsp;SET&nbsp;</div>
+			<button id="tug_left" class="but_control_07 " style="position: absolute;margin: 112% 0 0 -62%;background-image: url(img/seven/left.png);    background-repeat: round;" ></button>	
+			<button id="tug_right" class="but_control_07 " style="position: absolute;margin: 112% 0 0 -5%;background-image: url(img/seven/right.png);    background-repeat: round;" ></button>
+		</div>
+		<div style="position: relative;float:left; height: 100% ;width: 30%;   ">
+			
+			<div style="position: relative;float:left; height: 80% ;width: 30%; margin-top: 30%;"> 
+			<button id="tug_13" class="but_control_07_01 " style="background-color: #fd7b24de;" >13</button>	
+			<button id="tug_12" class="but_control_07_01 " style="background-color: #fd7b24de;">12</button>
+			<button id="tug_11" class="but_control_07_01 " style="background-color: #fd7b24de;">11</button>
+			<button id="tug_10" class="but_control_07_01 " style="background-color: #fd7b24de;">10</button>
+			<button id="tug_9" class="but_control_07_01 " style="background-color: #fd7b24de;">9</button>
+			<button id="tug_8" class="but_control_07_01 " style="background-color: #fd7b24de;">8</button>
+				
+			</div>
+			<div style="position: relative;float:left; height: 100% ;width: 40%; "> 
+				<button id="tug_0" class="but_control_07_01 " style=" width: 79%;height: 12.5%; float: none;margin-top: 22%;background-color: #fd7b24de;" >0</button>	
+		       
+				<img  src="img/seven/ship_blue.png" style="width: 100%;height: 62.5%;margin-bottom: 7%;"/>
+				<button id="tug_7" class="but_control_07_01 " style=" width: 79%; height: 12.2%;float: none; background-color: #fd7b24de;">7</button>	
+		
+			</div>
+			<div style="position: relative;float:left; height: 80% ;width: 30%;margin-top: 30%;"> 
+			<button id="tug_1" class="but_control_07_01 "  style="background-color: #fd7b24de;">1</button>	
+			<button id="tug_2" class="but_control_07_01 " style="background-color: #fd7b24de;">2</button>
+			<button id="tug_3" class="but_control_07_01 " style="background-color: #fd7b24de;">3</button>
+			<button id="tug_4" class="but_control_07_01 " style="background-color: #fd7b24de;">4</button>
+			<button id="tug_5" class="but_control_07_01 " style="background-color: #fd7b24de;">5</button>
+			<button id="tug_6" class="but_control_07_01 " style="background-color: #fd7b24de;">6</button>
+			</div>
+		</div>
+		
+		<div style="position: relative; float:left;height: 95.3% ;width: 33.33%; margin-top: 2.5%;">
+			<div style="position: relative;float:left; height: 100% ;width: 30%;margin-left: 2%; "> 
+			<button id="hp7000" class="but_control_07_01 " style=" width: 91%; height: 12.4%;">HP<br>7000</button>	
+			<button id="hp4800" class="but_control_07_01 "  style=" width: 91%; height: 12.4%;">HP<br>4800</button>
+			<button id="hp3000" class="but_control_07_01 "  style=" width: 91%; height: 12.4%;">HP<br>3000</button>
+			<button id="hp1800" class="but_control_07_01"  style=" width: 91%; height: 12.4%;">HP<br>1800</button>
+			
+				
+			</div>
+			<div style="position: relative;float:left; height: 100% ;width: 30%; "> 
+			<button id="tug_full" class="but_control_07_01 "  style=" width: 91%; height: 12.4%;">FULL</button>	
+			<button id="tug_half" class="but_control_07_01 "  style=" width: 91%; height: 12.4%;">HALF</button>
+			<button id="tug_slow" class="but_control_07_01 "  style=" width: 91%; height: 12.4%;">SLOW</button>
+			<button id="tug_stop" class="but_control_07_01"  style=" width: 91%; height: 12.4%;">STOP</button>
+			<button id="tug_slow_low" class="but_control_07_01 "  style=" width: 91%; height: 12.4%;">SLOW</button>
+			<button id="tug_half_low" class="but_control_07_01"  style=" width: 91%; height: 12.4%;">HALF</button>
+			<button id="tug_full_low" class="but_control_07_01 " style=" width: 91%; height: 12.4%;" >FULL</button>	
+		
+			</div>
+			<div style="position: relative;float:left; height: 100% ;width: 31%;"> 
+			<button id="tug_alarm_ack" class="but_control_07_01 " style="width: 90%;height: 12.5%;background-color: #fd7b24de;" >ALARM<br>ACK</button>	
+			<div style="position: relative;float:left; height: 40.5%;width: 27%;"></div>
+			<button id="tug_yes" class="but_control_07_01"  style=" width: 91%; height: 12.4%;">YES</button>
+			<button id="tug_let_go" class="but_control_07_01 "  style=" width: 91%; height: 12.4%;">LET<br>GO</button>
+			<button id="tug_let_all" class="but_control_07_01 "  style=" width: 91%; height: 12.4%; margin-bottom: 0px;background-color: #fd7b24de;">ALL<br>LETGO</button>
+			</div>
+		</div> 
+		
+		
+		
+		
+						
+		</div><!-- 7面板结束-->
+		<script src="./js/authority/lib3rd-jquery-1.9.1.js"></script>
+				
+				 <script src="./js/overall_constant.js"></script>		
+				<!--变量初始化 -->
+		
+			<!--  显示-->
+				
+				<!-- 面板切换  按键操作-->
+				<script src="./js/button_option_6.js"></script>
+	</body>
+</html>

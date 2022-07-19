@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script language=javascript src="./js/authority/gauge.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/control_but.css" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/zzsc-demo.css">
+			<style type="text/css">
+				
+				  .rud{
+					 position: relative;
+				    width: 109%;
+				        height: 109%;
+				        margin-top: 1%;
+				        margin-left: -3%;
+				    background-image: url(img/rud/0.png);
+				    background-size: contain;
+				    background-repeat: no-repeat;
+					}
+					
+					
+										
+					.rudshow
+					{
+						    position: absolute;
+						        margin-top: 44%;
+						        margin-left: 45%;
+						        text-align: center;
+						        font-size: xxx-large;
+						        font-family: fantasy;
+						        color: #FFFFFF;
+						
+						
+					}
+					.clock{
+						width: 104%;
+						    /* height: 62.5%; */
+						    position: absolute;
+						    z-index: -1;
+							 margin-left: 0%;
+					}
+					
+					.aa{
+						position: absolute;
+						left:0px;
+						top: 0px;
+					}
+			</style>
+	</head>	
+	<body style="width: 100%; height:100%;  background-color: ##00000;">
+		<div id="panel_board" class="panel_board">
+			<!--風向-->
+			<div class="panel_board_div" style="margin-left: 5.5%;">
+					<canvas data-type="radial-gauge" id="radial-one"	 data-min-value="0" data-max-value="360"
+			    data-major-ticks="N,30,60,E,120,150,S,210,240,W,300,330,N"data-minor-ticks="10"data-ticks-angle="360"data-start-angle="180"
+			    data-stroke-ticks="false"  data-highlights="true"   data-color-plate="#1c1736"
+			    data-color-major-ticks="#fff"    data-color-minor-ticks="#fff" data-color-numbers="#fff"
+			    data-color-needle-end="#ff0000"   data-value-box="false" data-value-text-shadow="true"
+			    data-needle-circle-size="15" data-needle-circle-outer="false"   data-needle-type="line"  data-needle-start="75" data-needle-end="100"
+			    data-needle-width="3" data-borders="true"  data-border-inner-width="2"data-border-outer-width="8"
+			    data-color-border-outer="#4a4a4a"data-color-border-outer-end="#000" data-color-border-inner="#000"
+			    data-color-border-inner-end="#000"  data-animation-target="plate" data-animation-duration="500"
+				data-animation-rule="linear" data-title="Wind Dir" data-color-title="#fff"></canvas>	
+			</div>
+			
+			<!-- RPM 左部分-->
+			<div  id="rpm_1"  class="panel_board_div" style="z-index: 1;">
+				<canvas data-type="radial-gauge" id="radial-two"  data-units="" data-title="RPM L" data-animate-on-init="true" data-min-value="-200" data-max-value="200" data-major-ticks="[200,150,100,50,0,50,100,150,200]" 
+					data-minor-ticks="4" data-stroke-ticks="true"  data-highlights='[
+							{"from": -200, "to": 0, "color": "#ec0a0ac9"},
+							{"from": 0, "to": 200, "color": "#2dc309"}
+						]' data-ticks-angle="250" data-start-angle="55" data-color-major-ticks="#dff" data-value="0" data-color-minor-ticks="#fff" data-color-title="#fff" data-color-units="#ccc"data-color-numbers="#eee" 
+						data-color-plate="#042d6d" data-border-shadow-width="0" data-borders="true" data-needle-type="arrow"  data-value-box="false" data-needle-width="2"
+						data-needle-circle-inner="false" data-animation-duration="300" data-animation-rule="linear" data-border-inner-width="2"data-border-outer-width="8"data-color-border-outer="#4a4a4a"
+						data-color-border-outer-end="#4a4a4a"data-color-border-inner="#4a4a4a"data-color-border-inner-end="#4a4a4a"data-color-needle-shadow-down="#000" data-color-needle-circle-outer="#fff" 
+						data-color-needle-circle-outer-end="#111" data-color-needle-circle-inner="#111" data-color-needle-circle-inner-end="#222" data-value-box-border-radius="0" data-color-value-box-rect="#222" 
+						data-color-value-box-rect-end="#333" data-font-value="Led"></canvas>
+			</div>
+			<div id="rpm_2" class="hide_panel_board_div_L">
+				<canvas data-type="radial-gauge" id="radial-two_2"  data-units="*1000" data-title="RPM L" data-animate-on-init="true" data-min-value="-6000" data-max-value="6000" data-major-ticks="[6,5,4,3,2,1,0,1,2,3,4,5,6]" 
+					data-minor-ticks="4" data-stroke-ticks="true"  data-highlights='[
+							{"from": -6000, "to": 0, "color": "#ec0a0ac9"},
+							{"from": 0, "to": 6000, "color": "#2dc309"}
+						]' data-ticks-angle="250" data-start-angle="55" data-color-major-ticks="#dff" data-value="0" data-color-minor-ticks="#fff" data-color-title="#fff" data-color-units="#ccc"data-color-numbers="#eee" 
+						data-color-plate="#042d6d" data-border-shadow-width="0" data-borders="true" data-needle-type="arrow"  data-value-box="false" data-needle-width="2"
+						data-needle-circle-inner="false" data-animation-duration="300" data-animation-rule="linear" data-border-inner-width="2"data-border-outer-width="8"data-color-border-outer="#4a4a4a"
+						data-color-border-outer-end="#4a4a4a"data-color-border-inner="#4a4a4a"data-color-border-inner-end="#4a4a4a"data-color-needle-shadow-down="#000" data-color-needle-circle-outer="#fff" 
+						data-color-needle-circle-outer-end="#111" data-color-needle-circle-inner="#111" data-color-needle-circle-inner-end="#222" data-value-box-border-radius="0" data-color-value-box-rect="#222" 
+						data-color-value-box-rect-end="#333" data-font-value="Led"></canvas>
+			</div>
+			<!-- RPM 右部分-->
+			<div  id="rpm_3"  class="panel_board_div" style="z-index: 1;">
+				<canvas data-type="radial-gauge" id="radial-three"  data-units="" data-title="RPM R" data-animate-on-init="true" data-min-value="-200" data-max-value="200" data-major-ticks="[200,150,100,50,0,50,100,150,200]" 
+					data-minor-ticks="4" data-stroke-ticks="true"  data-highlights='[
+							{"from": -200, "to": 0, "color": "#ec0a0ac9"},
+							{"from": 0, "to": 200, "color": "#2dc309"}
+						]' data-ticks-angle="250" data-start-angle="55" data-color-major-ticks="#dff" data-value="0" data-color-minor-ticks="#fff" data-color-title="#fff" data-color-units="#ccc"data-color-numbers="#eee" 
+						data-color-plate="#042d6d" data-border-shadow-width="0" data-borders="true" data-needle-type="arrow"  data-value-box="false" data-needle-width="2"
+						data-needle-circle-inner="false" data-animation-duration="300" data-animation-rule="linear" data-border-inner-width="2"data-border-outer-width="8"data-color-border-outer="#4a4a4a"
+						data-color-border-outer-end="#4a4a4a"data-color-border-inner="#4a4a4a"data-color-border-inner-end="#4a4a4a"data-color-needle-shadow-down="#000" data-color-needle-circle-outer="#fff" 
+						data-color-needle-circle-outer-end="#111" data-color-needle-circle-inner="#111" data-color-needle-circle-inner-end="#222" data-value-box-border-radius="0" data-color-value-box-rect="#222" 
+						data-color-value-box-rect-end="#333" data-font-value="Led"></canvas>
+			</div>
+			<div id="rpm_4" class="hide_panel_board_div_R">
+				<canvas data-type="radial-gauge" id="radial-three_2"  data-units="*1000" data-title="RPM R" data-animate-on-init="true" data-min-value="-6000" data-max-value="6000" data-major-ticks="[6,5,4,3,2,1,0,1,2,3,4,5,6]" 
+					data-minor-ticks="4" data-stroke-ticks="true"  data-highlights='[
+							{"from": -6000, "to": 0, "color": "#ec0a0ac9"},
+							{"from": 0, "to": 6000, "color": "#2dc309"}
+						]' data-ticks-angle="250" data-start-angle="55" data-color-major-ticks="#dff" data-value="0" data-color-minor-ticks="#fff" data-color-title="#fff" data-color-units="#ccc"data-color-numbers="#eee" 
+						data-color-plate="#042d6d" data-border-shadow-width="0" data-borders="true" data-needle-type="arrow"  data-value-box="false" data-needle-width="2"
+						data-needle-circle-inner="false" data-animation-duration="300" data-animation-rule="linear" data-border-inner-width="2"data-border-outer-width="8"data-color-border-outer="#4a4a4a"
+						data-color-border-outer-end="#4a4a4a"data-color-border-inner="#4a4a4a"data-color-border-inner-end="#4a4a4a"data-color-needle-shadow-down="#000" data-color-needle-circle-outer="#fff" 
+						data-color-needle-circle-outer-end="#111" data-color-needle-circle-inner="#111" data-color-needle-circle-inner-end="#222" data-value-box-border-radius="0" data-color-value-box-rect="#222" 
+						data-color-value-box-rect-end="#333" data-font-value="Led"></canvas>
+			</div>
+			
+		
+			<!--  船速   -->
+			<div class="panel_board_div">
+				<canvas data-type="radial-gauge" id="radial-four"  data-units="Knots" data-title="SPD" data-animate-on-init="true" data-min-value="0" data-max-value="60" data-major-ticks="[0,5,10,15,20,25,30,35,40,45,50,55,60]" 
+					data-minor-ticks="4" data-stroke-ticks="true"  data-highlights='[
+							{"from": 0, "to": 40, "color": "#2dc309"},
+							{"from": 40, "to": 60, "color": "#ec0a0ac9"}
+						]' data-value-box="false" data-color-plate="#fff"
+			    data-border-shadow-width="0" data-borders="false" data-needle-type="arrow"
+			    data-needle-width="2" data-needle-circle-size="7" data-needle-circle-outer="true"
+			    data-needle-circle-inner="false" data-animation-duration="300" data-animation-rule="linear"</canvas>
+			</div>
+			
+		</div>
+		
+		
+		<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+		
+		
+		
+		
+		
+		
+		<div id="panel_board" class="panel_board">
+			
+		<!--  风速   -->
+		<div class="panel_board_div" style="margin-left: 5.5%;">
+			<canvas data-type="radial-gauge" id="radial-five"  data-units="bf" data-title="Wind S" data-animate-on-init="true" data-min-value="0" data-max-value="30" data-major-ticks="[0,5,10,15,20,25,30]"
+			data-minor-ticks="4" data-stroke-ticks="true" data-highlights='[
+					{"from": 0, "to": 15, "color": "#2c9759"},
+					{"from": 15, "to": 30, "color": "#ec0a0ac9"}
+				]' data-ticks-angle="250" data-start-angle="55" data-color-major-ticks="#dff" data-value="0" data-color-minor-ticks="#fff" data-color-title="#fff" data-color-units="#ccc"data-color-numbers="#eee" 
+				data-color-plate="#1c1736" data-border-shadow-width="0" data-borders="true" data-needle-type="arrow" data-value-box="false"
+				data-needle-circle-inner="false" data-animation-duration="500" data-animation-rule="linear" data-border-inner-width="2"data-border-outer-width="8"data-color-border-outer="#4a4a4a"
+				data-color-border-outer-end="#000"data-color-border-inner="#000"data-color-border-inner-end="#000"data-color-needle-shadow-down="#4a4a4a" data-color-needle-circle-outer="#fff" 
+				data-color-needle-circle-outer-end="#111" data-color-needle-circle-inner="#111" data-color-needle-circle-inner-end="#222" data-value-box-border-radius="0" data-color-value-box-rect="#222" 
+				data-color-value-box-rect-end="#333" data-font-value="Led"></canvas>
+		</div>
+			<!-- ROT-->
+			<div class="panel_board_div" >
+					<canvas data-type="radial-gauge" id="radial-six"  data-units="°/min" data-title="ROT" data-animate-on-init="true" data-min-value="-200" data-max-value="200" data-major-ticks="[200,150,100,50,0,50,100,150,200]" 
+						data-minor-ticks="4" data-stroke-ticks="true" data-highlights='[
+								{"from": -200, "to": 0, "color":"#ec0a0ac9"},
+								{"from": 0, "to": 200, "color": "#2c9759"}
+							]' data-ticks-angle="250" data-start-angle="55" data-color-major-ticks="#dff" data-value="0" data-color-minor-ticks="#fff" data-color-title="#fff" data-color-units="#ccc"data-color-numbers="#eee" 
+				data-color-plate="#000000" data-border-shadow-width="0" data-borders="true" data-needle-type="arrow" data-value-box="false"
+				data-needle-circle-inner="false" data-animation-duration="500" data-animation-rule="linear" data-border-inner-width="2"data-border-outer-width="8"data-color-border-outer="#4a4a4a"
+				data-color-border-outer-end="#000"data-color-border-inner="#000"data-color-border-inner-end="#000"data-color-needle-shadow-down="#4a4a4a" data-color-needle-circle-outer="#fff" 
+				data-color-needle-circle-outer-end="#111" data-color-needle-circle-inner="#111" data-color-needle-circle-inner-end="#222" data-value-box-border-radius="0" data-color-value-box-rect="#222" 
+				data-color-value-box-rect-end="#333" data-font-value="Led"></canvas>
+				</div>
+			<!-- 主机舵角  -->
+			<div class="panel_board_div">
+				<div id="rudimg" class="rud">
+				<div style="position: absolute; visibility:hidden">
+					<ul>
+					 <li class="aa"><img src=img/rud/0.png> </li>  <li class="aa"><img src=img/rud/r5.png></li> <li class="aa"><img src=img/rud/r10.png></li> <li class="aa"><img src=img/rud/r15.png></li> <li class="aa"><img src=img/rud/r20.png></li>
+					<li class="aa"><img src=img/rud/r25.png></li> <li class="aa"><img src=img/rud/r30.png></li> <li class="aa"><img src=img/rud/r35.png></li>
+					<li class="aa"><img src=img/rud/g5.png></li> <li class="aa"><img src=img/rud/g10.png></li> <li class="aa"><img src=img/rud/g15.png></li> <li class="aa"><img src=img/rud/g20.png></li>
+					<li class="aa"><img src=img/rud/g25.png></li> <li class="aa"><img src=img/rud/g30.png></li> <li class="aa"><img src=img/rud/g35.png></li>
+					
+					 </ul>
+				</div>
+					<div id="rudshow" class="rudshow">00</div>
+				</div>
+			</div>
+			
+			<!-- 时钟-->
+					<div class="panel_board_div"  ">
+						<img  src="img/clock.png" class="clock"/>
+					 <canvas id="canvas"  width="480" height="490"></canvas>
+			</div>
+		
+			
+		
+					
+		</div>
+		<script src="./js/authority/lib3rd-jquery-1.9.1.js"></script>
+				
+				 <script src="./js/overall_constant.js"></script>
+				<!--变量初始化 -->
+		
+			   <script src="./js/button_option_8.js"></script>
+			
+	</body>
+</html>

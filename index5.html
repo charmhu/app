@@ -1,0 +1,95 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/control_but.css" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/zzsc-demo.css">
+	</head>
+	<style>
+		  .text_style_2{
+			font-size: xxx-large;
+			font-family: fantasy;
+			color: #FFFFFF;
+			vertical-align:middle;
+			line-height:74px;
+			  
+		  }
+	</style>
+<body>
+		<div id="6" class="six" style="z-index: 100;">
+							<div  style="position:relative;float:left;height:100%;width:50%; box-sizing: border-box;padding:3% 0% 4% 4%; ">
+								<span  style="text-align: center; font-weight: 600;font-size: x-large;">DOPPLER LOG</span>
+								<div style="position: relative;float:right;height: 95%;width: 30%;box-sizing: border-box;padding:16% 0% 6% 4%;">
+								<button id="fnots" class="but_control_06 " style="float: left;background-color:#2dc309 ;" >KNOTS</button>	
+								<button id="ms" class="but_control_06 " style="float: left;  background-color:#fd7b24de;">M/S</button>	
+								<button id="feets" class="but_control_06 " style="float: left; background-color:#fd7b24de;" >FEET/S</button>	
+								<button id="water_track" class="but_control_06 " style="float: left; background-color:#ec0a0ac9;font-family: cursive;" >WATER<br>TRACK</button>
+
+							</div>
+							
+							
+								
+								<div style="position: relative;float:right;height: 93%;width: 70%; background-image:url(img/ship/BShip_blue.png);background-repeat:no-repeat ;background-size: 100% 100%;	">
+						            <span ></span>
+									<div id="left_up" class="left_up border_td"  ></div>
+									<div id="right_up" class="right_up border_td"></div>
+									<div id="dopper_wt" class="wt border_td"></div>
+									<div id="dopper_qt" class="qt border_td" style="background-color:#ec0a0ac9;"></div>
+									
+									<div id="jianyou_up" class="jiantou_up border_td"></div>			
+									<div id="jiantou_down" class="jiantou_down border_td"></div>
+									
+									<div id="left_down" class="left_down border_td"></div>			
+									<div id="right_down" class="right_down border_td"></div>
+									
+									<div class="droppler_up border_td "><span id="doppler_up" class="text_style_2">0.00</span></div>
+									<div  class="droppler_middle border_td "><span id="doppler_middle" class="text_style_2">0.00</span></div>
+									<div  class="droppler_down border_td "> <span id="doppler_down" class="text_style_2">0.00</span></div>
+									
+						
+								</div>
+								
+								<div class="one_middle border_td" style="position: absolute; width:26%;height: 4.5%; margin: 87.6% 0 0 65%;">DIST(min)</div>
+								<div class="border_td" style="position: absolute; width:26%;height: 9%; margin: 93% 0 0 65%;"><span id="dist" class="text_style_2">0.00</span></div>
+							
+						</div>
+						<div style="position:relative; float:left;height:100%;width:50%;box-sizing: border-box;padding:3% 4% 4% 0%;">
+							<span  style="text-align: center; font-weight: 600; font-size: x-large; margin-right: -17%;">ECHO SOUNDER</span>
+							<div style="position: relative;float:left;height: 95%;width: 30%;box-sizing: border-box;padding:16% 0% 6% 4%; ">
+								<button id="fathom" class="but_control_06 " style="float: left;background-color:#fd7b24de;font-family: cursive;" >FATHON</button>	
+								<button id="meter" class="but_control_06 " style="float: left;background-color:#2dc309;" >METER</button>	
+								<button id="feet" class="but_control_06 " style="float: left;background-color:#fd7b24de;" >FEET</button>	
+								<button id="wateradd" class="but_control" style="width: 45.5%;height: 19%; margin-left: -20%;">+</button>
+								<button id="waterdece" class="but_control" style="width: 45.5%;height: 19%; ">-</button>
+
+							</div>	
+							
+							<div class="one_middle border_td" style="position: absolute; width:27%;height: 4.5%; margin: 87.6% 0 0 1%;">AlmLimit(m)</div>
+							<div class="border_td" style="position: absolute; width:27%;height: 9%; margin: 93% 0 0 1%;"><span id="alm_lmit" class="text_style_2">0.00</span></div>
+							<div class="echo_up border_td "><span id="echo_up" class="text_style_2">0.00</span></div>
+							<div  class="echo_down border_td "> <span id="echo_down" class="text_style_2">0.00</span></div>
+							<div style="position: absolute;width: 58%;height: 83%;margin: 0 0 0 25%;background-image: url(img/ship/BShip_blue.png); background-repeat: no-repeat;background-size:100% 100%;z-index: -1;"></div>
+							
+							<div style="position: relative;float:right;height: 100%;width: 29%; height:25%;box-sizing: border-box;padding:10% 0% 6% 6%;">
+									
+								<button id="es_arm_ack" class="but_control_06_01 " style="height: 100%;" >ALARM<br>ACK</button>	
+								
+
+							</div>	
+						</div>
+				
+		</div>
+		<script src="./js/authority/lib3rd-jquery-1.9.1.js"></script>
+				
+				 <script src="./js/overall_constant.js"></script>		
+				
+				<!-- 面板切换  按键操作-->
+				<script src="./js/button_option_5.js"></script>
+				
+				
+					
+	</body>
+</html>
