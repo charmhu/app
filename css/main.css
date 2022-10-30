@@ -281,6 +281,17 @@ width: 100%;
 	box-sizing: border-box;
 	
 }
+
+.nine{
+	position:absolute;
+	background-color: #073cff38;
+	height: 100%;
+	width: 100%;
+	padding: 3% 3% 3% 3%;
+	box-sizing: border-box;
+	
+}
+
 .force_seven {
 	position: absolute;
     width: 74%;

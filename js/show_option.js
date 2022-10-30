@@ -61,3 +61,45 @@ var progressView1 = document.getElementById('rot_first');
  
  }
 
+// ************************************第9个面板进度条
+
+//从udp接受回来之后进行显示
+var progressView3 = document.getElementById('first_show');
+
+ function add_bow(progress){
+
+ 	if(progress<0){
+ 		progressView3.setAttribute('fill' ,'#ff0000' );
+    		progressView3.setAttribute('x' , (251+progress));   
+    		progressView3.setAttribute('width' , Math.abs(progress));   
+ 		
+ 	}
+ 	else{
+ 	progressView3.setAttribute('fill' ,'#2dc309' );
+ 	progressView3.setAttribute('x' , '251');
+    progressView3.setAttribute('width' , progress); 
+ 	}
+   
+ 
+ 
+ }
+ var progressView4 = document.getElementById('second_show');
+//从udp接受回来之后进行显示
+ function add_stren(progress){
+
+ 	if(progress<0){
+ 		
+ 		progressView4.setAttribute('fill' ,'#ff0000' );
+    		progressView4.setAttribute('x' , (251+progress));   
+    		progressView4.setAttribute('width' , Math.abs(progress));   
+ 		
+ 	}
+ 	else{
+ 	progressView4.setAttribute('fill' ,'#2dc309' );
+ 	progressView4.setAttribute('x' , '251');
+    progressView4.setAttribute('width' , progress); 
+ 	}
+   
+ 
+ 
+ }
