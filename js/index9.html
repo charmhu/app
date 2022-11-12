@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/control_but.css" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/zzsc-demo.css">
+</head>
+<body>
+ <div id="9" class="nine" style="z-index:1;">
+	<div id="title">
+		<span  style="text-align: center; font-weight: 600; font-size: xx-large;">THRUSTER&nbsp;CONTROL</span>
+	 </div>
+	 <!-- 占ui用-->
+	<div class="nine_show" style="height: 12%;"> </div>
+
+	<div class="nine_show">
+		<button id="First_power" class="but_control_09"  onclick="power1()">POWER</button>
+		<button id="" class="but_control_09"  style="visibility: hidden;"></button>
+		<button id="" class="but_control_09" style="color: #FFFFFF; background-color: #002d52; font-family: revert; height: 30%; margin-top: 4%;border-color: #FFFFFF;">PORT</button>
+		<button id="" class="but_control_09"  style="visibility: hidden;"></button>
+		<button id="" class="but_control_09"  style="visibility: hidden;"></button>
+		<button id="" class="but_control_09"  style="visibility: hidden;"></button>
+		<button id="" class="but_control_09" style="color: #FFFFFF; background-color: #002d52; font-family: revert; height: 30%; margin-top: 4%;border-color: #FFFFFF;">STBD</button>
+		<button id="" class="but_control_09"  style="visibility: hidden;"></button>
+		<button id="ALARM_ACK" class="but_control_09" >ALARM<br>ACK</button>
+	</div>
+	 
+	<div class="nine_show">
+	 	<button id="First_full_4" class="but_control_09" onclick="buttonClick('1','4')">FULL</button>
+	 	<button id="First_full_3" class="but_control_09" onclick="buttonClick('1','3')">HALF</button>
+	 	<button id="First_full_2" class="but_control_09" >SLOW</button>
+	 	<button id="First_full_1" class="but_control_09" >DEAD<br>SLOW</button>
+	 	<button id="First_stop_0" class="but_control_09" >STOP</button>
+	 	<button id="First_slow_1" class="but_control_09" >DEAD<br>SLOW</button>
+	 	<button id="First_slow_2" class="but_control_09" >SLOW</button>
+	 	<button id="First_slow_3" class="but_control_09" >HALF</button>
+	 	<button id="First_slow_4" class="but_control_09" >FULL</button>
+	</div>
+	
+	<div class="nine_show">
+		<button id="led" class="but_control_09" style="position: absolute; left: 17%; color: #FFFFFF; background-color: #002d52; font-family: revert; height: 28%; margin-top: 3.2%; border-color: #FFFFFF;">BOW</button>
+	  	<svg width="500" height="120">
+	  		
+	  		<rect id="borderView" height="25" width="500" y="40" x="0" stroke-width="1.5" stroke="#000" fill="#6280bb" />
+	  		<rect height="25" width="4" y="40" x="250" stroke-width="1" fill="#ffffff" />
+	  		<rect id="first_show" height="25" y="40" x="0" stroke-opacity="null" stroke-width="1" stroke="#000" fill="#00bf5f" />
+	  	</svg>
+	</div>
+	<!-- 图片放中间 -->
+	<div style="position: absolute; margin: 30%; left: 10%;">
+		<img style="float: left;height: 90%;" src="./img/nine/ROT.png"></img>
+	</div>
+	<div class="nine_show">
+		<button id="Second_power" class="but_control_09" style="position: absolute; left: 0%;" onclick="power2()">POWER</button>
+		<button id="led" class="but_control_09" style="position: absolute; left: 17%; color: #FFFFFF; background-color: #002d52; font-family: revert; height: 28%; margin-top: 3.2%;border-color: #FFFFFF;">STERN</button>
+	   	<svg width="500" height="80">
+	   	
+	   		<rect id="helm" height="25" width="500" y="40" x="0" stroke-width="1.5" stroke="#000" fill="#6280bb" />
+	   		<rect height="25" width="4" y="40" x="250" stroke-width="1" fill="#ffffff" />
+	   		<rect id="second_show" height="25" y="40" x="0" stroke-opacity="null" stroke-width="1" stroke="#000" fill="#00bf5f" />
+	   	</svg>
+	 </div>
+
+	<div class="nine_show">
+	  	
+		<button id="Second_full_4" class="but_control_09" >FULL</button>
+		<button id="Second_full_3" class="but_control_09" >HALF</button>
+		<button id="Second_full_2" class="but_control_09" >SLOW</button>
+		<button id="Second_full_1" class="but_control_09" >DEAD<br>SLOW</button>
+		<button id="Second_stop_0" class="but_control_09" >STOP</button>
+		<button id="Second_slow_1" class="but_control_09" >DEAD<br>SLOW</button>
+		<button id="Second_slow_2" class="but_control_09" >SLOW</button>
+		<button id="Second_slow_3" class="but_control_09" >HALF</button>
+		<button id="Second_slow_4" class="but_control_09" >FULL</button>
+		
+	</div>
+	
+
+	 
+	 
+<!--  main 框结束-->
+ </div>
+	 
+		<script src="./js/authority/lib3rd-jquery-1.9.1.js"></script>
+				 <script src="./js/overall_constant.js"></script>		
+				<!--变量初始化 -->
+			   
+			<!--  显示-->
+				
+				<!-- 面板切换  按键操作-->
+				 <script src="./js/show_option.js"></script> 
+				<script src="./js/button_option_9.js"></script>
+	</body>
+</html>
